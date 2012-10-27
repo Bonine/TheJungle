@@ -117,23 +117,23 @@ int main ()
             
             while (again != 'n' || again != 'y');
                     
-    } //?
+            } 
                 
                 if (response != answer1) //They don't get the riddle right it reads out Wrong answer...
                     
                 {
                     
-                cout<< "Wrong answer, I'm putting a bullet in the gun.\n";
+                    cout<< "Wrong answer, I'm putting a bullet in the gun.\n";
                     
-                cout<< "Here is your next riddle. " << endl;
+                    cout<< "Here is your next riddle. " << endl;
                     
                 }
                 
                 // Second Riddle
                 
-                cout<< "The more you take, the more you leave behind. What are they? \n ";
-                
-                cin>> response;
+                    cout<< "The more you take, the more you leave behind. What are they? \n ";
+                    
+                    cin>> response;
                 
                 
                 
@@ -147,77 +147,62 @@ int main ()
                     
                     cin >> again;
                     
-                do
+        do
                         
-                {
+        { //This opens the do loop
                         
                 if (again == 'y')
                             
-                        {
+                {
                             
-                            return main();
+                        return main();
                             
-                        }
+                }
                         
                 if (again == 'n')
                             
-                        {
+                {
                             
-                     cout << "Coward!" << endl;
+                cout << "Coward!" << endl;
                             
-                            return 0;
-                            
-                 }
+                        return 0;
+                }
                         
                 else
                             
-                        {
+                {
                             
-                            cout <<
+                cout << "Incorecte answer, try again: ";
                             
-                            "Incorecte answer, try again: ";
+                cin >> again;
                             
-                            cin >> again;
-                            
-                        }
-                        
-                    }
-                    
-                    while (again != 'n' || again != 'y');
-                    
                 }
+                        
+        } // This closes the do loop
+                    
+        while (again != 'n' || again != 'y');
+                    
+        }
                 
                 if (response != answer2)
                     
                 {
                     
-                    cout <<
+                    cout << "The loaded gun is pressing against your mothers head. You" << endl;
                     
-                    "The loaded gun is pressing against your mothers head. You" << endl;
+                    cout << "better get this next riddle right.\n ";
                     
-                    cout <<
-                    
-                    "better get this next riddle right.\n ";
-                    
-                    cout<<
-                    
-                    "This is your final riddle. \n ";
+                    cout<< "This is your final riddle. \n ";
                     
                 }
                 
                 // Third Riddle
                 
-                cout<<
+                cout<< "I am taken from a mine, and shut up in a wooden case," << endl;
                 
-                "I am taken from a mine, and shut up in a wooden case," << endl;
+                cout<< "from which I am never released, and yet I am used by almost" << endl;
                 
-                cout<<
-                
-                "from which I am never released, and yet I am used by almost" << endl;
-                
-                cout<<
-                
-                "everybody.\n ";
+                cout<< "everybody. What am I? \n ";
                 
                 cin>> response;
                 
@@ -225,173 +210,149 @@ int main ()
                     
                 {
                     
-                    cout <<
+                    cout << "Your a lucky your mom is hott and I don't want to shoot" << endl;
                     
-                    "Your a lucky your mom is hott and I don't want to shoot" << endl;
+                    cout << "her pretty face." << endl;
                     
-                    cout <<
-                    
-                    "her pretty face." << endl;
-                    
-                    cout <<
-                    
-                    "Do you want to try again? ";
+                    cout << "Do you want to try again? ";
                     
                     cin >> again;
                     
-                    do
+        do
                         
-                    {
+        {
                         
-                        if (again == 'y')
+                if (again == 'y')
                             
-                        {
+                {
                             
-                            return main();
+                        return main();
                             
-                        }
-                        
-                        if (again == 'n')
-                            
-                        {
-                            
-                            cout <<
-                            
-                            "Coward!" << endl;
-                            
-                            return 0;
-                            
-                        }
-                        
-                        else
-                            
-                        {
-                            
-                            cout <<
-                            
-                            "Incorecte answer, try again: ";
-                            
-                            cin >> again;
-                            
-                        }
-                        
-                    }
-                    
-                    while (again != 'n' || again != 'y');
-                    
                 }
+                        
+                if (again == 'n')
+                            
+                {
+                            
+                    cout <<"Coward!" << endl;
+                            
+                        return 0;
+                            
+                }
+                        
+                else
+                            
+                {
+                            
+                    cout << "Incorecte answer, try again: ";
+                            
+                    cin >> again;
+                            
+                }
+                        
+        }
+                    
+        while (again != 'n' || again != 'y');
+                    
+        }
                 
                 if (response != answer3)
                     
                 {
                     
-                    cout<<
-                    
-                    "Okay your mom is dead, have a nice day." << endl;
+                    cout<< "Okay your mom is dead, have a nice day." << endl;
                     
                 }
                 
-                do
+        do
                     
-                {
+        {
                     
-                    cout <<
-                    
-                    "would you like to play again? (y/n): ";
+                    cout << "would you like to play again? (y/n): ";
                     
                     cin >> again;
                     
-                    if (again == 'y')
+                if (again == 'y')
                         
-                    {
+                {
                         
                         return main();
                         
-                    }
+                }
                     
-                    if (again == 'n')
+                if (again == 'n')
                         
-                    {
+                {
                         
-                        cout <<
+                    cout <<"Coward!" << endl;
                         
-                        "Coward!" << endl;
-                        
-                    }
+                }
                     
-                    else
+                else
                         
-                    {
+                {
                         
-                        cout <<
-                        
-                        "Wrong answer try again: ";
+                    cout <<"Wrong answer try again: ";
                         
                         cin >> again;
                         
-                    }
-                    
                 }
+                    
+        }
                 
-                while (again != 'y' || again != 'n');
+        while (again != 'y' || again != 'n');
                 
-            }
+        }
             
         case 'n':
             
-            if (answer == 'n')
+                if (answer == 'n')
                 
-            {
+                {
                 
-                cout<<
-                
-                "BANG! Your mother is dead coward. \a " << endl;
+                    cout<<"BANG! Your mother is dead coward. \a " << endl;
                 
                 break;
                 
-            }
+                }
             
         default:
             
-            do
+        do
                 
-            {
+        {
                 
                 if (answer != 'n' && answer != 'y')
                     
                 {
                     
-                    cout<<
-                    
-                    "Inncorect Response! Please enter the correct response: ";
+                    cout<<"Inncorect Response! Please enter the correct response: ";
                     
                     cin >> answer;
                     
-                    if (answer == 'y')
+                if (answer == 'y')
                         
-                    {
+                {
                         
                         return main();
                         
-                    }
-                    
-                    if (answer == 'n')
-                        
-                    {
-                        
-                        cout <<
-                        
-                        "Coward!" << endl;
-                        
-                    }
-                    
                 }
+                    
+                if (answer == 'n')
+                        
+                {
+                        
+                    cout <<"Coward!" << endl;
+                        
+                }
+                    
+        }
                 
-            }
+        }//?
             
-            while (answer != 'n' && answer != 'y');
+        while (answer != 'n' && answer != 'y');
             
-    }
+        }
     
     return 0;
     

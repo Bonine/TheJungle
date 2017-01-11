@@ -47,7 +47,7 @@ int main ()
     
     total = number1 * number2;
     
-    cout<< " What is your favorite animal? \n ";
+    cout<< " What is your favorite car? \n ";
     
     cin>> noun;
     
